@@ -29,13 +29,11 @@ class LoopAuthManager {
     return jsonEncode(response);
   }
 
-
-
   /// 건강데이터 전송
   void sendHealthData(Map<String, dynamic> healthData) {
     final jsonString = jsonEncode(healthData);
     // TODO: 실제 API 호출 구현
-    HCApi.dio.post(path: '/health/data', data: jsonString);
+    HCApi.dio.post('/health/data', data: jsonString);
     print('Sending health data: $jsonString');
   }
 
