@@ -1,7 +1,7 @@
 import 'env.dart';
 
 /// 인증 환경 타입
-enum AuthEnvironment { staging, production }
+enum AuthEnvironment { dev, staging, production }
 
 /// 인증 설정 관리 클래스
 class AuthConfig {
@@ -16,6 +16,15 @@ class AuthConfig {
     required this.clientSecret,
     required this.baseUrl,
   });
+
+  static AuthConfig get dev {
+    return AuthConfig(
+      environment: AuthEnvironment.dev,
+      clientId: Env.devClientId,
+      clientSecret: Env.devClientSecret,
+      baseUrl: 'https://dev.ichms.ai',
+    );
+  }
 
   /// 스테이징 서버 설정
   static AuthConfig get staging {
@@ -40,6 +49,8 @@ class AuthConfig {
   /// 현재 환경에 따른 설정 반환
   static AuthConfig getCurrentConfig(AuthEnvironment env) {
     switch (env) {
+      case AuthEnvironment.dev:
+        return dev;
       case AuthEnvironment.staging:
         return staging;
       case AuthEnvironment.production:

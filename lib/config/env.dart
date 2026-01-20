@@ -1,6 +1,11 @@
 /// 환경 변수 관리 클래스
 /// 하드코딩된 값 사용
 class Env {
+  // 개발 환경 변수
+  static const String devClientId = '297e1e34-27a6-4043-8813-0a0c62dccf7b';
+  static const String devClientSecret =
+      '4a1f9d7c6d45107af1c01603737b6855932b959c9d5ee03109da5a079883b0bd';
+
   // 스테이징 환경 변수
   static const String stagingClientId = '297e1e34-27a6-4043-8813-0a0c62dccf7b';
   static const String stagingClientSecret =
