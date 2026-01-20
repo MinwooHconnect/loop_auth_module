@@ -3,7 +3,7 @@ import 'dart:convert';
 import 'package:dio/dio.dart';
 import 'package:hcm_core/core/dio/hc_api.dart';
 import 'package:loop_auth_module/api/model/token_response.dart';
-import 'package:loop_auth_module/util/token_storage.dart';
+import 'package:loop_auth_module/util/my_token_storage.dart';
 import 'config/environment.dart';
 import 'config/auth_config.dart';
 
