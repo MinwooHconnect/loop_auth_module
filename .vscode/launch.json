@@ -40,6 +40,29 @@
             "request": "launch",
             "type": "dart",
             "flutterMode": "release"
+        },
+        {
+            "name": "example (iPhone)",
+            "cwd": "example",
+            "request": "launch",
+            "type": "dart",
+            "deviceId": "00008020-000E08680221002E"
+        },
+        {
+            "name": "example (iPhone - profile mode)",
+            "cwd": "example",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile",
+            "deviceId": "00008020-000E08680221002E"
+        },
+        {
+            "name": "example (iPhone - release mode)",
+            "cwd": "example",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release",
+            "deviceId": "00008020-000E08680221002E"
         }
     ]
 }

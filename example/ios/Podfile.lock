@@ -1,0 +1,68 @@
+PODS:
+  - Flutter (1.0.0)
+  - flutter_blue_plus_darwin (0.0.2):
+    - Flutter
+    - FlutterMacOS
+  - flutter_secure_storage_darwin (10.0.0):
+    - Flutter
+    - FlutterMacOS
+  - hcm_core (0.0.1):
+    - Flutter
+  - hcm_healthkit (0.0.1):
+    - Flutter
+    - SwiftyJSON
+  - integration_test (0.0.1):
+    - Flutter
+  - loop_auth_module (0.0.1):
+    - Flutter
+  - path_provider_foundation (0.0.1):
+    - Flutter
+    - FlutterMacOS
+  - SwiftyJSON (5.0.2)
+
+DEPENDENCIES:
+  - Flutter (from `Flutter`)
+  - flutter_blue_plus_darwin (from `.symlinks/plugins/flutter_blue_plus_darwin/darwin`)
+  - flutter_secure_storage_darwin (from `.symlinks/plugins/flutter_secure_storage_darwin/darwin`)
+  - hcm_core (from `.symlinks/plugins/hcm_core/ios`)
+  - hcm_healthkit (from `.symlinks/plugins/hcm_healthkit/ios`)
+  - integration_test (from `.symlinks/plugins/integration_test/ios`)
+  - loop_auth_module (from `.symlinks/plugins/loop_auth_module/ios`)
+  - path_provider_foundation (from `.symlinks/plugins/path_provider_foundation/darwin`)
+
+SPEC REPOS:
+  trunk:
+    - SwiftyJSON
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: Flutter
+  flutter_blue_plus_darwin:
+    :path: ".symlinks/plugins/flutter_blue_plus_darwin/darwin"
+  flutter_secure_storage_darwin:
+    :path: ".symlinks/plugins/flutter_secure_storage_darwin/darwin"
+  hcm_core:
+    :path: ".symlinks/plugins/hcm_core/ios"
+  hcm_healthkit:
+    :path: ".symlinks/plugins/hcm_healthkit/ios"
+  integration_test:
+    :path: ".symlinks/plugins/integration_test/ios"
+  loop_auth_module:
+    :path: ".symlinks/plugins/loop_auth_module/ios"
+  path_provider_foundation:
+    :path: ".symlinks/plugins/path_provider_foundation/darwin"
+
+SPEC CHECKSUMS:
+  Flutter: cabc95a1d2626b1b06e7179b784ebcf0c0cde467
+  flutter_blue_plus_darwin: 20a08bfeaa0f7804d524858d3d8744bcc1b6dbc3
+  flutter_secure_storage_darwin: acdb3f316ed05a3e68f856e0353b133eec373a23
+  hcm_core: 6db756233ec47ea083028f384028ca82d67abee6
+  hcm_healthkit: f0ab5e86da27f0573eb8b9c7c090335179d79e0e
+  integration_test: 4a889634ef21a45d28d50d622cf412dc6d9f586e
+  loop_auth_module: c1d97113f0d67c6da024f026e31f40952420e732
+  path_provider_foundation: bb55f6dbba17d0dccd6737fe6f7f34fbd0376880
+  SwiftyJSON: f5b1bf1cd8dd53cd25887ac0eabcfd92301c6a5a
+
+PODFILE CHECKSUM: 3c63482e143d1b91d2d2560aee9fb04ecc74ac7e
+
+COCOAPODS: 1.16.2
