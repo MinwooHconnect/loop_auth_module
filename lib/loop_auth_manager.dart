@@ -41,7 +41,6 @@ class LoopAuthManager {
   /// 외부 Client 토큰 발급 (ichms_ropc_external)
   /// userTel과 userId로 토큰 발급
   Future<TokenResponse> requestExternalClientToken({
-    required String userTel, // E164 표준: 예) +821099991111
     String? userId,
     String? clientId,
     String? clientSecret,
@@ -60,10 +59,7 @@ class LoopAuthManager {
       authHeader = _createBasicAuthHeader(finalClientId, finalClientSecret);
     }
 
-    final data = <String, dynamic>{
-      'grant_type': 'ichms_ropc_external',
-      'userTel': userTel,
-    };
+    final data = <String, dynamic>{'grant_type': 'client_credentials'};
     if (userId != null) {
       data['userId'] = userId;
     }

@@ -6,7 +6,6 @@ class HomeController extends GetxController {
 
   void increment() async {
     await LoopAuthManager().requestExternalClientToken(
-      userTel: '+821099991111',
       userId: 'a76df653-e04a-44af-a389-f064fc72327a',
     );
   }
